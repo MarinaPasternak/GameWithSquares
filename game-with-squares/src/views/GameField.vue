@@ -9,7 +9,14 @@
       <error-message :errorMessage="errorMessage"></error-message>
     </template>
     <template v-else>
-      {{ gameMods }}
+      <select
+        class="form-select"
+        id="floatingSelect"
+        aria-label="Selcet game mode"
+      >
+        <option selected>Pick mode</option>
+        <option v-for="mode in gameMods" :key="mode.id">{{ mode.name }}</option>
+      </select>
     </template>
   </div>
 </template>
