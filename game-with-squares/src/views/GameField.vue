@@ -60,7 +60,7 @@ export default {
   data() {
     return {
       selectedMode: "",
-      grid: [],
+      grid: null,
     };
   },
   computed: {
@@ -119,7 +119,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(var(--field-size), 1fr);
     grid-template-rows: repeat(var(--field-size), 1fr);
-    gap: 1px;
     border: 1px solid gray;
 
   .empty-container {
@@ -131,9 +130,8 @@ export default {
     flex-wrap: wrap;
   }
   .grid-square {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
+    width: 30px;
+    height: 30px;
     background-color: white;
     border: 1px solid gray;
   }
