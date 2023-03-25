@@ -2,7 +2,9 @@
 
 ## Project description
 
-The game allows users to generate a playing field, the size and contents of which depend on the game mode. Users can hover over a square, which turns blue, and the square turns white when the user stops hovering over it. Additionally, there is an actions log component where users can see all blue squares and their positions (row, column).
+The game allows users to generate a playing field, the size of which depend on the game mode. 
+Users can hover over a square, which turns blue, and the square turns white when the user stops hovering over it.
+Additionally, there is an actions log component where users can see all blue squares and their positions (row, column).
 
 ## Technologies Used
 - Vue.js
